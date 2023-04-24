@@ -1,0 +1,177 @@
+*{
+    --titleFont: 'Lato', sans-serif;
+    --headingFont: 'Dancing Script', cursive;
+}
+
+body {
+    font-family: var(--titleFont);
+}
+
+.navbar {
+    font-size: 1rem;
+}
+
+.navbar a:hover{
+    color: darkred;
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+}
+  
+.carousel-caption h1 {
+    font-family: var(--headingFont);
+    font-size: calc(2em + 1vw);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+}
+  
+.carousel-caption p {
+    font-family: var(--titleFont);
+    font-size: calc(2.5em + 0.5vw);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.carousel-caption .btn{
+    background: linear-gradient(to bottom, #333333, #000000);
+    color: #fff;
+    border-color: #000000;
+    border-radius: 0;
+}
+
+.carousel-caption .btn:hover{
+    background: linear-gradient(to bottom, #000000, #333333);
+    border-color: #333333;
+}
+
+.card-img-blur {
+    filter: blur(2px);
+}
+
+.promo .card-text {
+    font-family: var(--titleFont);
+    font-size: 3.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-title1:hover{
+    color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(32, 32, 32);
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: grey;
+  color: #fff;
+}
+
+.edan {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+  
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black;
+    transition: transform 0.2s ease-in-out;
+}
+  
+.edan:hover {
+    color: darkred;
+}
+  
+.edan:hover .arrow {
+    transform: translate(5px, -50%);
+}
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+  
+footer p {
+    margin: 0;
+}
+  
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+  
+footer ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+  
+footer ul li:first-child {
+    margin-left: 0;
+}
+  
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+footer ul li a:hover {
+    color: #999;
+}
+  
+footer h4 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+footer form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+  
+footer form input[type="text"] {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+  
+footer form button[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+  
+footer form button[type="submit"]:hover {
+    background-color: #666;
+}
+  
